@@ -7,9 +7,9 @@ const tree = {
       children: [
         { value: 4, children: [] },
         { value: 5, children: [] },
-      ]
-    }
-  ]
+      ],
+    },
+  ],
 };
 
 function linkParents(node) {
@@ -21,5 +21,5 @@ function linkParents(node) {
 }
 
 module.exports = {
-  tree: linkParents(tree)
+  tree: linkParents(tree),
 };

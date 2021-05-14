@@ -1,4 +1,4 @@
-const { traverseTree } = require('./traverse-tree');
+const { traverseTree } = require("./traverse-tree");
 
 function mapTree(tree, func) {
   return [...traverseTree(tree)].map(func);

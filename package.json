@@ -4,13 +4,14 @@
   "repository": "git@github.com:hachibu/traversing-trees-with-generators.git",
   "author": "hachibu <raymondsohn@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jest": "26.6.3"
-  },
   "scripts": {
     "test": "jest"
   },
   "jest": {
     "changedSince": "main"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.3.0"
   }
 }

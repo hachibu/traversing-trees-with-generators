@@ -1,10 +1,10 @@
 function* backtrackTree(node, max = Infinity) {
-  let curr = node
-  let iter = 0
+  let curr = node;
+  let iter = 0;
   while (curr && iter < max) {
-    yield curr
-    curr = curr.parent
-    iter++
+    yield curr;
+    curr = curr.parent;
+    iter++;
   }
 }
 
