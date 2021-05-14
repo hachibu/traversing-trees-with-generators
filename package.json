@@ -1,7 +1,6 @@
 {
   "name": "traversing-trees-with-generators",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:hachibu/traversing-trees-with-generators.git",
   "author": "hachibu <raymondsohn@gmail.com>",
   "license": "MIT",

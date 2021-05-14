@@ -1,41 +1,25 @@
-class Tree {
-  constructor(value, children = []) {
-    this.value = value
-    this.children = children
-    this.parent = null
-    for (let child of this.children) {
-      child.parent = this
+const tree = {
+  value: 1,
+  children: [
+    { value: 2, children: [] },
+    {
+      value: 3,
+      children: [
+        { value: 4, children: [] },
+        { value: 5, children: [] },
+      ]
     }
-  }
+  ]
+};
 
-  *[Symbol.iterator]() {
-    yield this
-    for (let child of this.children) {
-      yield* child
-    }
+function linkParents(node) {
+  for (let child of node.children) {
+    child.parent = node;
+    linkParents(child);
   }
-
-  map(func) {
-    return [...this].map(func)
-  }
-
-  reduce(reducer, state) {
-    return [...this].reduce(reducer, state)
-  }
-
-  filter(predicate) {
-    return [...this].filter(predicate)
-  }
-
-  *backtrack(max = Infinity) {
-    let curr = this
-    let iter = 0
-    while (curr && iter < max) {
-      yield curr
-      iter++
-      curr = curr.parent
-    }
-  }
+  return node;
 }
 
-module.exports = Tree
+module.exports = {
+  tree: linkParents(tree)
+};
