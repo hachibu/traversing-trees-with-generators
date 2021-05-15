@@ -9,9 +9,9 @@ describe("backtrackTree", () => {
     expect(values).toEqual([5, 3, 1]);
   });
 
-  test("backtrack 2 levels", () => {
+  test("backtrack 1 level", () => {
     let leaf = [...traverseTree(tree)].pop();
-    let values = [...backtrackTree(leaf, 2)].map((node) => node.value);
+    let values = [...backtrackTree(leaf, 1)].map((node) => node.value);
     expect(values).toEqual([5, 3]);
   });
 });
