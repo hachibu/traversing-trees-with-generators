@@ -1,5 +1,9 @@
 const { tree } = require("./mocks");
-const { mapTree, filterTree, reduceTree } = require("./map-filter-reduce-tree");
+const {
+  mapTree,
+  filterTree,
+  reduceTree,
+} = require("../src/map-filter-reduce-tree");
 
 describe("mapTree", () => {
   test("double values", () => {

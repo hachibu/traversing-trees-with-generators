@@ -1,5 +1,5 @@
 const { tree } = require("./mocks");
-const { traverseTree } = require("./traverse-tree");
+const { traverseTree } = require("../src/traverse-tree");
 
 describe("traverseTree", () => {
   test("traverse tree depth-first", () => {
