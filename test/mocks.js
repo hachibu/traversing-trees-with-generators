@@ -9,6 +9,6 @@ const node = (value, children = []) => {
   return parent;
 };
 
-module.exports = {
-  tree: () => node(1, [node(2, [node(3)]), node(4, [node(5)])]),
-};
+const tree = node(1, [node(2, [node(3), node(4)]), node(5, [node(6)])]);
+
+module.exports = { tree };
