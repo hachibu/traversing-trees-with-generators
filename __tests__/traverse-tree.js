@@ -1,5 +1,6 @@
-const { tree } = require("./mocks");
-const { traverseTree } = require("../src/traverse-tree");
+import traverseTree from "../src/traverse-tree";
+
+const tree = node(1, [node(2, [node(3), node(4)]), node(5, [node(6)])]);
 
 describe("traverseTree", () => {
   test("traverse tree depth-first", () => {

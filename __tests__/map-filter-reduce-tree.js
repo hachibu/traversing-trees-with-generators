@@ -1,9 +1,6 @@
-const { tree } = require("./mocks");
-const {
-  mapTree,
-  filterTree,
-  reduceTree,
-} = require("../src/map-filter-reduce-tree");
+import { mapTree, filterTree, reduceTree } from "../src/map-filter-reduce-tree";
+
+const tree = node(1, [node(2, [node(3), node(4)]), node(5, [node(6)])]);
 
 describe("mapTree", () => {
   test("double values", () => {

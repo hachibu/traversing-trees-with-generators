@@ -1,9 +1,7 @@
-const { traverseTree } = require("./traverse-tree");
+import traverseTree from "./traverse-tree";
 
-function* traverseTrees(nodes) {
+export default function* traverseTrees(nodes) {
   for (let node of nodes) {
     yield* traverseTree(node);
   }
 }
-
-module.exports = { traverseTrees };

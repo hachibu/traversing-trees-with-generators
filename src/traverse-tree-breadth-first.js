@@ -1,4 +1,4 @@
-function* traverseTreeBreadthFirst(node) {
+export default function* traverseTreeBreadthFirst(node) {
   let queue = [node];
   while (queue.length > 0) {
     let curr = queue.shift();
@@ -8,5 +8,3 @@ function* traverseTreeBreadthFirst(node) {
     yield curr;
   }
 }
-
-module.exports = { traverseTreeBreadthFirst };

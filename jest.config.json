@@ -1,0 +1,4 @@
+{
+  "changedSince": "main",
+  "setupFiles": ["./setup-jest.js"]
+}

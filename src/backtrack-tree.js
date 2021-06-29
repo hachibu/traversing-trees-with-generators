@@ -1,4 +1,4 @@
-function* backtrackTree(node, max = Infinity) {
+export default function* backtrackTree(node, max = Infinity) {
   let curr = node;
   let iter = 0;
   while (curr && iter <= max) {
@@ -7,5 +7,3 @@ function* backtrackTree(node, max = Infinity) {
     iter++;
   }
 }
-
-module.exports = { backtrackTree };

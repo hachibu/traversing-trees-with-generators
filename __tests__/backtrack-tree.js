@@ -1,6 +1,7 @@
-const { tree } = require("./mocks");
-const { traverseTree } = require("../src/traverse-tree");
-const { backtrackTree } = require("../src/backtrack-tree");
+import traverseTree from "../src/traverse-tree";
+import backtrackTree from "../src/backtrack-tree";
+
+const tree = node(1, [node(2, [node(3), node(4)]), node(5, [node(6)])]);
 
 describe("backtrackTree", () => {
   test("backtrack to root", () => {
